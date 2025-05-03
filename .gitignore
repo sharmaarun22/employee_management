@@ -1,0 +1,48 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+env/
+venv/
+ENV/
+
+# PyCharm project files
+.idea/
+
+# VSCode settings (optional)
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Python virtual environment packages
+*.egg-info/
+*.egg
+
+# Logs and debug files
+*.log
+
+# Jupyter Notebook Checkpoints (if using Jupyter)
+.ipynb_checkpoints/
+
+# Test coverage
+htmlcov/
+.coverage
+.cache
+.tox/
+.nox/
+
+# mypy, pylint, pyright, etc.
+.mypy_cache/
+.pyright/
+
+# Unit test cache
+.pytest_cache/
