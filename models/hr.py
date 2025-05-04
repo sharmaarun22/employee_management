@@ -8,6 +8,7 @@ class HR:
         if not isinstance(emp, Employee):
             raise ValueError("Only Employee instances can be added")
         self.employees.append(emp)
+        Employee.employee_count += 1
 
     def remove_employee(self, emp_id):
         self.employees = [e for e in self.employees if e.emp_id != emp_id]

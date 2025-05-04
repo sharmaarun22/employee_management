@@ -2,13 +2,12 @@ from .person import Person
 from .department import Department
 
 class Employee(Person):
-    _employee_count = 0
+    employee_count = 0
 
     def __init__(self, name, emp_id, department: Department, salary):
         super().__init__(name, emp_id)
         self._salary = salary
         self.department = department
-        Employee._employee_count += 1
 
     @property
     def salary(self):
@@ -28,7 +27,7 @@ class Employee(Person):
 
     @classmethod
     def get_total_employees(cls):
-        return cls._employee_count
+        return cls.employee_count
 
     @staticmethod
     def validate_employee_id(emp_id):
